@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="a" src="tree.jfif">
+    <input type="button" value="Change Img" onclick="fun()">
+</body>
+<script>
+    function fun(){
+        if (document.getElementById('a').getAttribute('src')==='tree.jfif'){
+            document.getElementById('a').setAttribute("src",'ctree.png')
+        }
+        else{
+            document.getElementById('a').setAttribute("src",'tree.jfif')
+        }
+    }
+</script>
+</html>

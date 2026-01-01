@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div onmousedown="fun(event)" style="height: 100px; width:100px; b-c:'red';"></div>
+    <form onsubmit="stop(event)">
+        <input type="submit" value="submit">
+    </form>
+    <button id="btn">Click</button>
+    <script>
+        function stop(a){
+            a.preventDefault()
+            alert("form submistion stop")
+        }
+        function fun(a){
+            val = a.button
+            switch(val)
+            {
+                case 0: alert("left");
+                break;
+                case 1: alert('middle');
+                break;
+                case 2: alert('right');
+                break;
+            }
+        }
+        document.getElementById('btn').addEventListener('click',function(){alert("Button Clicked")})
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeypress="keyc(event)">
+    <select onchange="show(event)">
+        <option value="Select" hidden>--Select--</option>
+        <option value="red">Red</option>
+        <option value="Green">Green</option>
+    </select>
+    <button onclick="show1(event)">Click</button>
+    <script>
+        function show(a){
+            alert(a.type)
+        }
+        function show1(a){
+            alert(a.target.tagName)
+        }
+        function keyc(a){
+            alert('key pressed : '+a.keyCode)
+        }
+    </script>
+</body>
+</html>

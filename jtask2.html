@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="abc" onmouseover="this.style.height='200px';this.style.width='200px'" onmousedown="this.style.backgroundColor='yellow';this.innerHTML='Clicked';this.style.height='100px';this.style.width='100px';this.style.borderRadius='0%'"  onmouseup="this.style.backgroundColor='pink';this.style.height='200px';this.style.width='200px';this.innerHTML='Relesed';this.style.borderRadius='50%'">
+        Click Me
+    </div>
+</body>
+
+</html>

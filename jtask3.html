@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="ab">
+    <!-- Add Three Input fild flowing task 
+     1. in a first text fild convert entered text in to lowerCase when the value change using onChange 
+     2. in a second text fild change the bg-color to yellow uisng onFouse Event along with change in text color to blue while typing (using onInput event) 
+     3. convert entered text in to upperCase when field losses the fouse using onBlure Event-->
+    <!-- 
+     write a js using function 
+     1. if mouse is over heading welcome 2026 it shoud turn yellow if mouse goes out then bg-color turns into cyan 
+     2. if find button is clicked then it show date and time informastion (use new Date() method to get time) 
+     3. if button name red is clicked then bg-color of body shoud turn in to green-->
+    <h1>Task 1</h1>
+    <input type="text" onchange="this.value=this.value.toLowerCase()">
+    <input type="text" oninput="this.style.color='blue'">
+    <input type="text" onblur="this.value=this.value.toUpperCase()">
+    <h1>Task 2</h1>
+    <h2 onmousedown="fun(this)" onmouseup="fun3(this)">Welcome 2026</h2>
+    <input type="button" value="Date" onclick="fun1(this)">
+    <input type="button" value="Click to chang BG" onclick="fun2(this)">
+    <script>
+        function fun(a) {
+            a.style.color = 'yellow'
+
+        }
+        function fun3(a) {
+            a.style.backgroundColor = 'red'
+        }
+        function fun1(e) {
+            alert("Today's Date is : " + new Date())
+        }
+        function fun2(q) {
+            a = document.getElementById('ab')
+            a.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+
+</html>
