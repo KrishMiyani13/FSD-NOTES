@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action="ctree.png" onsubmit="fun(event)">
+            <input type="submit" value="Submit">
+            <input type="text" id="a">
+        </form>
+        <script>
+         function fun(e) {
+            e.preventDefault()
+            alert("From Submission status!")
+        } 
+        const input = document.querySelector("#a")
+        input.addEventListener("keydown", e => {
+            if (isNaN(e.key)) {
+                e.preventDefault()
+            }
+        })
+    </script>
+    </body>
+
+</html>

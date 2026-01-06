@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a js to validate usre name and pass ,pass must be 6 to 12 ,user shoud not start with @,_and any number ,also check the constion of both the fild shoud not be blanck -->
+     <input type="text" id="user" placeholder="User Name">
+     <input type="text" id="pass" placeholder="Pass">
+     <input type="submit" onclick="fun()">
+     <script>
+        function fun(){
+            let pat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+            let u =document.getElementById('user').value
+            let v =document.getElementById('pass').value
+            if (pat.test(u)){
+                alert("Enter valid User Name")
+            }
+            else{
+            if(v.length == 0 || u.length == 0){
+                alert("can't blank")
+            }
+            else if (v.length<6 || v.length>12){
+                alert("between 6 to 12")
+            }
+            else{
+                alert("pwd is strong")
+            }
+            }
+            
+        }
+     </script>
+</body>
+</html>
